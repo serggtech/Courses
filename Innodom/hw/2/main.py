@@ -13,15 +13,16 @@ print("Остаток от их деления:", (nubmer_one % number_two))
 print("Пользователь вводит трёхзначное число. Нужно вывести на экран сумму его цифр.")
 print()
 num = int(input("Введите трёхзначное число: "))
-digit_one = (num // 100)
+digit_one = num // 100
 digit_two = (num - (digit_one * 100)) // 10
 digit_three = num - ((digit_two * 10) + (digit_one * 100))
-print('Сумма его цифр:', (digit_one + digit_two + digit_three))
+print("Сумма его цифр:", (digit_one + digit_two + digit_three))
 
 ## Задача 4
 print(
     "Создайте четыре переменные a, b, c, d, присвойте им разные значения. Затем поменяйте их значения местами без "
-    "использования дополнительных переменной.")
+    "использования дополнительных переменной."
+)
 print()
 a, b, c, d = "a", "b", "c", "d"
 print("До замены значений :", a, b, c, d)
@@ -30,15 +31,16 @@ print("После замены хначений :", a, b, c, d)
 
 ## Задача 5
 print(
-    'Создайте три переменные со строками. Используйте print(), чтобы вывести эти переменные на одной строке, '
-    'разделяя их конструкцией " : ". Закончите вывод символом ".".')
+    "Создайте три переменные со строками. Используйте print(), чтобы вывести эти переменные на одной строке, "
+    'разделяя их конструкцией " : ". Закончите вывод символом ".".'
+)
 
-string_a = 'string_a'
-string_b = 'string_b'
-string_c = 'string_b'
+string_a = "string_a"
+string_b = "string_b"
+string_c = "string_b"
 
 print()
 print(string_a, string_b, string_c)
 print()
-print(string_a, string_b, string_c, sep=':', end='.')
+print(string_a, string_b, string_c, sep=":", end=".")
 print()
