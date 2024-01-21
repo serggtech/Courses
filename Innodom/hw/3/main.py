@@ -50,6 +50,7 @@ string_str = ("Consectetur accumsan dui in pulvinar dui ipsum sed hac imperdiet 
               "elit. Non eget habitasse sodales libero, tempus quam, eleifend ex. Molestie vulputate amet in "
               "malesuada leo, molestie mollis ultricies. Mollis pellentesque sed id cras consectetur integer sed "
               "vulputate nulla malesuada molestie in et mattis platea amet vel et adipiscing quis.")
+
 print(string_str[-7:-15:-1])
 
 # Задача 5
