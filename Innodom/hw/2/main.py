@@ -65,6 +65,7 @@ X = -35 + 12
 print("X =", X)
 print()
 
+
 print("Y – 32 = 1")
 Y = 32 + 1
 print("Y =", Y)
