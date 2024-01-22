@@ -55,13 +55,46 @@ print(string_str[-7:-15:-1])
 
 # Задача 5
 ## Есть строка "<248>". Напишите программу, которая выведет на экран произведение чисел этой строки.
+print(
+    'Есть строка "<248>". Напишите программу, которая выведет на экран произведение чисел этой строки.'
+)
 print()
 string_start = "<248>"
+string_start_new = string_start[1:4]
+print(
+    f"Произведение чисел этой строки: {int(string_start_new[0])*int(string_start_new[1])*int(string_start_new[2])}"
+)
 
 # Задача 6
 ## Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран.
+print("Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран.")
+print()
+user_string = input("Пользователь вводит строку: ")
+print()
+user_string_len = len(user_string)
+user_string_len_half = int(user_string_len) // 2
+# print(user_string_len)
+# print(int(user_string_len_half))
 
+print(f"{user_string[user_string_len_half:user_string_len]}{user_string[0:user_string_len_half]}")
+print()
+print("А теперь в одну строку")
+print()
+print(f"{user_string[(len(user_string) // 2):len(user_string)]}{user_string[0:(len(user_string) // 2)]}")
 
 # Задача 7
-# Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)
-
+## Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)
+print("Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)")
+print()
+user_string = input("Пользователь вводит строку, где слова разделены пробелом: ")
+print()
+print(user_string)
+user_string_count_space = user_string.count(' ')
+print(f"Количество пробелов в строке: { user_string_count_space }")
+print(f"Количество символов в строке: { len(user_string) - user_string_count_space}")
+user_string_split = user_string.split(' ')
+print(f"Количество слов в строке: {len(user_string_split)}")
+print()
+print("А теперь в одну строку")
+print()
+print(f"Количество слов в строке: {len(user_string.split(' '))}")
