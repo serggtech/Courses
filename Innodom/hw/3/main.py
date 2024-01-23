@@ -12,8 +12,8 @@ height = int(input("b сторона высота: "))
 star = "*"
 space = " "
 
-zvezda_width = star + '' + (star * (width-2)) + '' + star
-space_height = (star + '' + (space * (width-2)) + '' + star + '\n') * (height-2)
+zvezda_width = star + '' + (star * (width - 2)) + '' + star
+space_height = (star + '' + (space * (width - 2)) + '' + star + '\n') * (height - 2)
 print()
 print(zvezda_width)
 print(space_height, end='')
@@ -37,8 +37,8 @@ print()
 user_string = input("Введите строку: ")
 user_sub_string = input("Введите подстроку: ")
 print()
-print(f"Индекс первого вхожднения подстроки в строку: { user_string.find(user_sub_string) } \n"
-      f"Индекс последнего вхождения подстроки в строку: { user_string.rfind(user_sub_string) }")
+print(f"Индекс первого вхожднения подстроки в строку: {user_string.find(user_sub_string)} \n"
+      f"Индекс последнего вхождения подстроки в строку: {user_string.rfind(user_sub_string)}")
 
 # Задача 4
 ## Напишите программу, которая выведет на экран подстроку от 7 до 15 (включительно) символа с конца и в обратном порядке.
@@ -62,12 +62,13 @@ print()
 string_start = "<248>"
 string_start_new = string_start[1:4]
 print(
-    f"Произведение чисел этой строки: {int(string_start_new[0])*int(string_start_new[1])*int(string_start_new[2])}"
+    f"Произведение чисел этой строки: {int(string_start_new[0]) * int(string_start_new[1]) * int(string_start_new[2])}"
 )
 
 # Задача 6
 ## Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран.
-print("Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран.")
+print(
+    "Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран.")
 print()
 user_string = input("Пользователь вводит строку: ")
 print()
@@ -84,14 +85,15 @@ print(f"{user_string[(len(user_string) // 2):len(user_string)]}{user_string[0:(l
 
 # Задача 7
 ## Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)
-print("Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)")
+print(
+    "Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)")
 print()
 user_string = input("Пользователь вводит строку, где слова разделены пробелом: ")
 print()
 print(user_string)
 user_string_count_space = user_string.count(' ')
-print(f"Количество пробелов в строке: { user_string_count_space }")
-print(f"Количество символов в строке: { len(user_string) - user_string_count_space}")
+print(f"Количество пробелов в строке: {user_string_count_space}")
+print(f"Количество символов в строке: {len(user_string) - user_string_count_space}")
 user_string_split = user_string.split(' ')
 print(f"Количество слов в строке: {len(user_string_split)}")
 print()
