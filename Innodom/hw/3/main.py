@@ -12,11 +12,11 @@ height = int(input("b сторона высота: "))
 star = "*"
 space = " "
 
-zvezda_width = star + '' + (star * (width - 2)) + '' + star
-space_height = (star + '' + (space * (width - 2)) + '' + star + '\n') * (height - 2)
+zvezda_width = star + "" + (star * (width - 2)) + "" + star
+space_height = (star + "" + (space * (width - 2)) + "" + star + "\n") * (height - 2)
 print()
 print(zvezda_width)
-print(space_height, end='')
+print(space_height, end="")
 print(zvezda_width)
 
 # Задача 2
@@ -37,19 +37,23 @@ print()
 user_string = input("Введите строку: ")
 user_sub_string = input("Введите подстроку: ")
 print()
-print(f"Индекс первого вхожднения подстроки в строку: {user_string.find(user_sub_string)} \n"
-      f"Индекс последнего вхождения подстроки в строку: {user_string.rfind(user_sub_string)}")
+print(
+    f"Индекс первого вхожднения подстроки в строку: {user_string.find(user_sub_string)} \n"
+    f"Индекс последнего вхождения подстроки в строку: {user_string.rfind(user_sub_string)}"
+)
 
 # Задача 4
 ## Напишите программу, которая выведет на экран подстроку от 7 до 15 (включительно) символа с конца и в обратном порядке.
 #
 ## Consectetur accumsan dui in pulvinar dui ipsum sed hac imperdiet accumsan ut. Interdum malesuada dui vel arcu ultricies. Faucibus. Orci, vitae mattis libero, in sed dictumst. Urna tempus nulla luctus elit. Non eget habitasse sodales libero, tempus quam, eleifend ex. Molestie vulputate amet in malesuada leo, molestie mollis ultricies. Mollis pellentesque sed id cras consectetur integer sed vulputate nulla malesuada molestie in et mattis platea amet vel et adipiscing quis.
 print()
-string_str = ("Consectetur accumsan dui in pulvinar dui ipsum sed hac imperdiet accumsan ut. Interdum malesuada dui "
-              "vel arcu ultricies. Faucibus. Orci, vitae mattis libero, in sed dictumst. Urna tempus nulla luctus "
-              "elit. Non eget habitasse sodales libero, tempus quam, eleifend ex. Molestie vulputate amet in "
-              "malesuada leo, molestie mollis ultricies. Mollis pellentesque sed id cras consectetur integer sed "
-              "vulputate nulla malesuada molestie in et mattis platea amet vel et adipiscing quis.")
+string_str = (
+    "Consectetur accumsan dui in pulvinar dui ipsum sed hac imperdiet accumsan ut. Interdum malesuada dui "
+    "vel arcu ultricies. Faucibus. Orci, vitae mattis libero, in sed dictumst. Urna tempus nulla luctus "
+    "elit. Non eget habitasse sodales libero, tempus quam, eleifend ex. Molestie vulputate amet in "
+    "malesuada leo, molestie mollis ultricies. Mollis pellentesque sed id cras consectetur integer sed "
+    "vulputate nulla malesuada molestie in et mattis platea amet vel et adipiscing quis."
+)
 
 print(string_str[-7:-15:-1])
 
@@ -68,7 +72,8 @@ print(
 # Задача 6
 ## Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран.
 print(
-    "Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран.")
+    "Пользователь вводит строку. Напишите программу, которая разрежет строку пополам, переставит эти части местами и выведет результат на экран."
+)
 print()
 user_string = input("Пользователь вводит строку: ")
 print()
@@ -77,24 +82,29 @@ user_string_len_half = int(user_string_len) // 2
 # print(user_string_len)
 # print(int(user_string_len_half))
 
-print(f"{user_string[user_string_len_half:user_string_len]}{user_string[0:user_string_len_half]}")
+print(
+    f"{user_string[user_string_len_half:user_string_len]}{user_string[0:user_string_len_half]}"
+)
 print()
 print("А теперь в одну строку")
 print()
-print(f"{user_string[(len(user_string) // 2):len(user_string)]}{user_string[0:(len(user_string) // 2)]}")
+print(
+    f"{user_string[(len(user_string) // 2):len(user_string)]}{user_string[0:(len(user_string) // 2)]}"
+)
 
 # Задача 7
 ## Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)
 print(
-    "Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)")
+    "Пользователь вводит строку, где слова разделены пробелом. Напишите программу, которая выведет на экран количество слов в строке. (Не используйте то, что мы ещё не изучали)"
+)
 print()
 user_string = input("Пользователь вводит строку, где слова разделены пробелом: ")
 print()
 print(user_string)
-user_string_count_space = user_string.count(' ')
+user_string_count_space = user_string.count(" ")
 print(f"Количество пробелов в строке: {user_string_count_space}")
 print(f"Количество символов в строке: {len(user_string) - user_string_count_space}")
-user_string_split = user_string.split(' ')
+user_string_split = user_string.split(" ")
 print(f"Количество слов в строке: {len(user_string_split)}")
 print()
 print("А теперь в одну строку")
