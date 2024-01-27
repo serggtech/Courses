@@ -4,14 +4,14 @@
 # если есть нельзя, то напишите, через сколько можно. # Пример: # # 16.00 # Можно есть # 20.00 # Можно есть через 13
 # часов.
 
-time_dont_eat_hour = [18, 9]
+time_dont_eat_hour_start = 9.00
+time_dont_eat_hour_end = 18.00
 time_now_eat = input("Введите время в формате '00.00' : ")
-time_now_eat = str(time_now_eat).split(".")
-time_now_eat_hour = int(time_now_eat[0])
+time_now_eat_hour_float = float(time_now_eat)
 
 
-if 18 > time_now_eat_hour > 9:
-    print(f"Можно есть через {abs(int(time_now_eat[0])-18)} часов")
+if time_dont_eat_hour_end > time_now_eat_hour_float > time_dont_eat_hour_start:
+    print(f"Можно есть через {abs(time_now_eat_hour_float-time_dont_eat_hour_end)} ")
 else:
     print("Можно есть")
 
@@ -40,7 +40,7 @@ print()
 
 time_now_data = input("Введите дату в формате '11.11.2000': ")
 time_now_data_str = str(time_now_data).split(".")
-time_now_data_int = int(time_now_data_str[0])
+time_now_data_int = int(time_now_data_str[1])
 
 if time_now_data_int == 1:
     print(f"{time_now_data} -> Январь")
