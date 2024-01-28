@@ -44,26 +44,37 @@ time_now_data_int = int(time_now_data_str[1])
 
 if time_now_data_int == 1:
     print(f"{time_now_data} -> Январь")
+
 elif time_now_data_int == 2:
     print(f"{time_now_data} -> Февраль")
+
 elif time_now_data_int == 3:
     print(f"{time_now_data} -> Март")
+
 elif time_now_data_int == 4:
     print(f"{time_now_data} -> Апрель")
+
 elif time_now_data_int == 5:
     print(f"{time_now_data} -> Май")
+
 elif time_now_data_int == 6:
     print(f"{time_now_data} -> Июнь")
+
 elif time_now_data_int == 7:
     print(f"{time_now_data} -> Июль")
+
 elif time_now_data_int == 8:
     print(f"{time_now_data} -> Август")
+
 elif time_now_data_int == 9:
     print(f"{time_now_data} -> Сентябрь")
+
 elif time_now_data_int == 10:
     print(f"{time_now_data} -> Октябрь")
+
 elif time_now_data_int == 11:
     print(f"{time_now_data} -> Ноябрь")
+
 elif time_now_data_int == 12:
     print(f"{time_now_data} -> Декабрь")
 
