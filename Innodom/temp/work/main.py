@@ -1,7 +1,10 @@
 import csv
 
-fileInput = "filterpress1.cfg"
-file = open(fileInput, "r", encoding="utf-8-sig", errors="ignore")
+# file_name = "wtp"
+file_name = input("Введите имя файла: ")
+file_format = ".cfg"
+file_input = file_name + file_format
+file = open(file_input, "r", encoding="utf-8-sig", errors="ignore")
 string_search = "RACK"
 list_find = []
 list_find_list = []
@@ -33,7 +36,7 @@ print(list_find_list)
 
 # print("err11111")
 
-with open("output.csv", "w", newline="\n") as file:
+with open("output_" + file_name + ".csv", "w", newline="\n") as file:
     # Создание объекта записи CSV
     writer = csv.writer(file)
 
