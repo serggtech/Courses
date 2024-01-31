@@ -4,13 +4,31 @@
 # если есть нельзя, то напишите, через сколько можно. # Пример: # # 16.00 # Можно есть # 20.00 # Можно есть через 13
 # часов.
 
+
+def calculate_eating_time(current_time):
+    if current_time >= 9 and current_time < 18:
+        return "Можно есть"
+    elif current_time < 9:
+        hours_left = 9 - current_time
+        return f"Можно есть через {hours_left} часов."
+    else:
+        hours_left = 24 - current_time + 9
+        return f"Можно есть через {hours_left} часов."
+
+
+# Пример использования:
+current_time = 16
+result = calculate_eating_time(current_time)
+print(result)
+
+
 time_dont_eat_hour_start = 9.00
 time_dont_eat_hour_end = 18.00
 time_now_eat = input("Введите время в формате '00.00' : ")
 time_now_eat_hour_float = float(time_now_eat)
 
 
-if time_dont_eat_hour_end > time_now_eat_hour_float > time_dont_eat_hour_start:
+if time_dont_eat_hour_end > time_now_eat_hour_float < time_dont_eat_hour_start:
     print(f"Можно есть через {abs(time_now_eat_hour_float-time_dont_eat_hour_end)} ")
 else:
     print("Можно есть")
