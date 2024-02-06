@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница выпускников</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 30%;
+        border: 2px solid rgb(0, 66, 159);
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      img {
+        width: 150px;
+        height: 200px;
+      }
+
+      button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(0, 66, 159);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: rgb(23, 113, 241);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container" id="random-cards">
+      <!-- Вставьте скрипт для генерации трех рандомных карточек -->
+    </div>
+
+    <button onclick="redirectToInstagram()">Спроси меня</button>
+
+    <script>
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function generateRandomCardHTML(prefix) {
+        const randomNum = getRandomInt(1, 3);
+        return `
+        <div class="card">
+          <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="asset/${prefix.toLowerCase()}_graduate${randomNum}.jpg" alt="${prefix} Graduate ${randomNum}">
+          </div>
+          <div style="display: flex; align-items: center; gap: 40px;">
+            <div style="align-items: start;">
+              <p>${prefix === 'Frontend' ? 'Джейсон' : 'Сурен'}</p>
+              <p>${prefix === 'Frontend' ? 'Слоним' : 'Минск'}</p>
+              <p>${prefix}-разработка</p>
+              <p>Период обучения: ${
+                prefix === 'Frontend'
+                  ? '20.01.2023-20.07.2023'
+                  : '10.06.2021-10.12.2021'
+              }</p>
+            </div>
+            <img src="asset/sert.png" alt="${prefix} Certificate" style="width: 150px; height: 150px;">
+          </div>
+          <div>Текущий статус: ${
+            prefix === 'Frontend'
+              ? 'Продолжает развитие в сфере'
+              : 'Работает в Apple'
+          }</div>
+          <button onclick="redirectToInstagram()">Спроси меня</button>
+        </div>
+      `;
+      }
+
+      function showRandomCards() {
+        const cardContainer = document.getElementById('random-cards');
+        const prefixes = ['Frontend', 'Backend'];
+
+        cardContainer.innerHTML = '';
+
+        for (let i = 0; i < 3; i++) {
+          const randomPrefix = prefixes[getRandomInt(0, 1)];
+          cardContainer.innerHTML += generateRandomCardHTML(randomPrefix);
+        }
+      }
+
+      function redirectToInstagram() {
+        window.location.href = 'https://www.instagram.com/';
+      }
+
+      // Вызываем функцию showRandomCards() при загрузке страницы
+      window.onload = function () {
+        showRandomCards();
+      };
+    </script>
+  </body>
+</html>
