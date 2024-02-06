@@ -3,7 +3,7 @@
 # Помогите посчитать, сколько дней в году Маша заказывает суши. Учтите, что в году не всегда 365 дней.
 days_count = input("Введите количество дней в году: ")
 days_period_sushi = 16
-result = int(days_count) / days_period_sushi
+result = int(days_count) // days_period_sushi
 print(f"сколько дней в году Маша заказывает суши {result}")
 
 
