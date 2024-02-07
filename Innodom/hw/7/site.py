@@ -55,3 +55,35 @@ Translate_dict = {
     "answer": "ответ",
     "number": "номер.",
 }
+
+str_val = input("Введите слово: ")
+
+# print(str_val)
+flag_known_word = False
+for word_eng, word_rus in Translate_dict.items():
+    if str_val == word_eng:
+        print(f"Русское слово: {word_rus}")
+        flag_known_word = True
+        break
+
+    elif str_val == word_rus:
+        print(f"Английское слово: {word_eng}")
+        flag_known_word = True
+        break
+
+if not flag_known_word:
+    print("нет такого слова")
+
+
+# Задача 2
+# 1кг творога стоит 5 руб.
+# Выведите на экран таблицу стоимости творога массой 100г, 200г, 300г, 600г, 900г
+
+price_per_kg = 5
+
+weights = [100, 200, 300, 600, 900]
+
+print("Масса (г)\t\tСтоимость (руб)")
+for weight in weights:
+    price = weight / 1000 * price_per_kg
+    print(f"{weight}\t\t\t{price}")
