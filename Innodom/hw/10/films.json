@@ -1,0 +1,122 @@
+{
+  "films": [
+    {
+      "name": "Interstellar",
+      "release": "2014",
+      "producer": "Christopher Nolan",
+      "evaluations": [
+        {
+          "name": "IMDb",
+          "result": 8.6
+        },
+        {
+          "name": "metacritic",
+          "result": 74
+        },
+        {
+          "name": "rottentomatoes",
+          "result": 72
+        }
+      ],
+      "actors": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain"
+      ]
+    },
+    {
+      "name": "The Conjuring",
+      "release": "2013",
+      "producer": "James Wan",
+      "evaluations": [
+        {
+          "name": "IMDb",
+          "result": 7.5
+        },
+        {
+          "name": "metacritic",
+          "result": 68
+        },
+        {
+          "name": "rottentomatoes",
+          "result": 86
+        }
+      ],
+      "actors": [
+        "Patrick Wilson",
+        "Vera Farmiga",
+        "Lili Taylor"
+      ]
+    },
+    {
+      "name": "La La Land",
+      "release": "2016",
+      "producer": "Damien Chazelle",
+      "evaluations": [
+        {
+          "name": "IMDb",
+          "result": 8.0
+        },
+        {
+          "name": "metacritic",
+          "result": 94
+        },
+        {
+          "name": "rottentomatoes",
+          "result": 91
+        }
+      ],
+      "actors": [
+        "Ryan Gosling",
+        "Emma Stone",
+        "John Legend"
+      ]
+    },
+    {
+      "name": "Pulp Fiction",
+      "release": "1994",
+      "producer": "Quentin Tarantino",
+      "evaluations": [
+        {
+          "name": "IMDb",
+          "result": 8.9
+        },
+        {
+          "name": "metacritic",
+          "result": 94
+        },
+        {
+          "name": "rottentomatoes",
+          "result": 92
+        }
+      ],
+      "actors": [
+        "John Travolta",
+        "Samuel L. Jackson",
+        "Uma Thurman"
+      ]
+    },
+    {
+      "name": "Spirited Away",
+      "release": "2001",
+      "producer": "Hayao Miyazaki",
+      "evaluations": [
+        {
+          "name": "IMDb",
+          "result": 8.6
+        },
+        {
+          "name": "metacritic",
+          "result": 96
+        },
+        {
+          "name": "rottentomatoes",
+          "result": 97
+        }
+      ],
+      "actors": ["DaveighChase","SuzannePleshette","JasonMarsden"]
+    }
+  ]
+}
+
+
