@@ -1,0 +1,6 @@
+count,films_name,release,producer,evaluations_name_IMDb,evaluations_result_IMDb,evaluations_name_metacritic,evaluations_result_metacritic,evaluations_name_rottentomatoes,evaluations_result_rottentomatoes
+1,Interstellar,2014,Christopher Nolan,IMDb,8.6,metacritic,74,rottentomatoes,72
+2,The Conjuring,2013,James Wan,IMDb,7.5,metacritic,68,rottentomatoes,86
+3,La La Land,2016,Damien Chazelle,IMDb,8.0,metacritic,94,rottentomatoes,91
+4,Pulp Fiction,1994,Quentin Tarantino,IMDb,8.9,metacritic,94,rottentomatoes,92
+5,Spirited Away,2001,Hayao Miyazaki,IMDb,8.6,metacritic,96,rottentomatoes,97
