@@ -63,10 +63,10 @@ print()
 print(read_data)
 with open("titanic_out.txt", "w") as csv_file:
     csv_file.write(
-        f"Количество выживших: {count_survived} , "
-        f"Количество не выживших: {count_no_survived} ,"
-        f"Количество мужчин: {count_male_all} , "
-        f"Количество мужчин no_age: {count_male_no_age} ,"
-        f"Количество мужчин <= 15: {count_male_child}"
+        f"Количество count_survived выживших: {count_survived}, \n"
+        f"Количество count_no_survived не выживших: {count_no_survived}, \n"
+        f"Количество count_male_all мужчин: {count_male_all}, \n"
+        f"Количество count_male_no_age мужчин no_age: {count_male_no_age}, \n"
+        f"Количество count_male_child мужчин <= 15: {count_male_child}"
     )
     # write_data = csv.DictWriter
