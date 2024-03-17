@@ -34,16 +34,16 @@ with open("titanic.csv", "r", newline="") as csv_file:
 
         if row["Sex"] == "male":
             count_male_all += 1
-        if row["Sex"] == "male" and row["Age"] >= "15":
-            count_male += 1
-        if row["Sex"] == "male" and row["Age"] <= "15":
+        # if row["Sex"] == "male" and row["Age"] >= "15":
+        #     count_male += 1
+        if row["Sex"] == "male" and row["Age"] < "16":
             count_male_child += 1
         if row["Sex"] == "male" and row["Age"] == "":
             count_male_no_age += 1
 
-        if row["Sex"] == "female" and row["Age"] >= "15":
-            count_female += 1
-        if row["Sex"] == "female" and row["Age"] <= "15":
+        # if row["Sex"] == "female" and row["Age"] >= "15":
+        #     count_female += 1
+        if row["Sex"] == "female" and row["Age"] < "16":
             count_female_child += 1
         #
         # if row["Sex"] == "female":
@@ -70,3 +70,19 @@ with open("titanic_out.txt", "w") as csv_file:
         f"Количество count_male_child мужчин <= 15: {count_male_child}"
     )
     # write_data = csv.DictWriter
+
+
+#
+# Задача CSV
+# В файле titanic.csv подсчитать общее кол-во мужчин, женщин и детей(до 15 лет включительно)
+#
+# Найти средний возраст пассажиров в зависимости от класса билетов.
+#
+# Определить процент выживших мужчин, женщин и детей (ребёнком
+# считается пассажир до 15-ти лет включительно)
+#
+# Распределить всех пассажиров по портам посадки: Значения могут быть: "S" (Southampton), "C" (Cherbourg) "Q" (Queenstown)
+#
+# Этих пассажиров распределить по: мужчинам женщинам детям (до 15 лет включительно)
+#
+# Выходные данные записать в новый csv файл
